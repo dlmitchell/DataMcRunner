@@ -53,6 +53,8 @@ Write this instead...
 ```C#
 static void Main(string[] args)
 {
+	var query = "select * from whatever";
+	
 	// it's so easy!
 	YieldReader<whatever> reader = new YieldReader<whatever>();
 
