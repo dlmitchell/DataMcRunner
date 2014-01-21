@@ -7,14 +7,12 @@ Tired of writing crappy boiler plate data streaming code? Do this instead.
 
 Hate writing this...
 
-```
+```C#
 public void StreamCrap()
 {
-
 	// 	TOOOO MUCH CODE!!!!!!!!!!!
 	try
 	{
-
 		// gross - boiler plate is boring
 		using (var connection = new SqlConnection(_connectionString))
 		using (var command = connection.CreateCommand()) // yawn
@@ -52,10 +50,9 @@ public void StreamCrap()
 
 Write this instead...
 
-```
+```C#
 static void Main(string[] args)
 {
-
 	// it's so easy!
 	YieldReader<whatever> reader = new YieldReader<whatever>();
 
